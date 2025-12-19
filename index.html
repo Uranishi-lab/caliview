@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CaliView: Continuous Viewpoint Calibration Using Dynamic Rotation Gain Control</title>
+    <meta name="description" content="Project page for 'CaliView: Continuous Viewpoint Calibration Using Dynamic Rotation Gain Control' (IEEE TVCG)." />
+    <link rel="icon" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="assets/academicons-1.9.4/css/academicons.min.css">
+    <link rel="stylesheet" href="assets/css/import.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="wrap">
+        <div class="pub">IEEE Transactions on Visualization and Computer Graphics (TVCG) (2025)</div>
+        <h1>CaliView: Continuous Viewpoint Calibration Using Dynamic Rotation Gain Control</h1>
+        <p class="authors">Donghae Lim<sup>1</sup>, Shizuka Shirai<sup>1</sup>, Masato Kobayashi<sup>1</sup>, Yuki Uranishi<sup>1</sup>, Haruo Takemura<sup>1</sup><br><sup>1</sup>The University of Osaka</p>
+        <p style="margin-top: 12px;">
+            <a class="btn" href="https://doi.org/10.1109/TVCG.2025.3620419" target="_blank"><i class="ai ai-ieee"></i> Xplore</a>
+            <a class="btn" href="https://hdl.handle.net/11094/102824" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
+            <a class="btn" href="#bibtex"><i class="fas fa-book"></i> BibTeX</a>
+        </p>
+        <figure id="teaser">
+            <img class="teaser" src="assets/teaser.png" alt="CaliView"/>
+            <div class="center">
+                <figcaption class="teaser">Caliview is a novel method for reorientation, which consistently adjusts the user’s perspective to always face an optimal direction in VR. This figure illustrates an example where CaliView rotates the user’s orientation 90 degrees to the right. The black arrows indicate the orientation and change of the HMD, while the red arrows represent the orientation and change of the VR camera. Solid lines show the direction before the reorientation, and dashed lines indicate the direction after the change.
+                </figcaption>
+            </div>
+        <figure>
+    </header>
+    
+    <section id="abstract" class="bg">
+      <h2>Abstract</h2>
+      <div class="wrap">
+          <p>Head tracking allows users of Virtual Reality (VR) to freely rotate their heads 360 degrees while exploring virtual environments. When using VR in a limited space, the ability to physically rotate one's head is limited to a specific range. To address this issue, previous studies have proposed methods to employ distinct rotation factors for real and imaginary rotations. However, its primary usage lies in redirected walking; thus, it is unsuitable for seated VR. In this paper, we propose CaliView, which consistently adjusts the user's perspective to always face an optimal direction in VR, all while ensuring a comfortable posture. CaliView continuously controls the rotation gain to ensure that the disparity between the present body orientation and the optimal orientation is reduced to zero, encouraging the user to assume a forward-facing position with the target orientation. To assess the suggested approach, CaliView, we experimented to compare three conditions: CaliView, snap turning only (SnapTurn), and hybrid of CaliView and snap turning (Hybrid). The research findings suggest that CaliView functions as a useful reorientation technique, enabling implicit reorientation without sacrificing the user experience. Additionally, this study showcases its compatibility with various other techniques, such as the traditional snap-turn, thus emphasizing its versatility.</p>
+      </div>
+    </section>
+
+   
+
+    <section id="bibtex">
+      <h2>BibTeX</h2>
+      <div class ="wrap">
+      <div class="code-container">
+          <button class="copy-btn tooltip" onclick="copyBibTex()"><i class="fas fa-copy"></i><span class="tooltiptext">Copy</span></button>
+          <code class="bib" id="bibtex-code">
+              @ARTICLE{11202441,
+                author={Lim, Donghae and Shirai, Shizuka and Kobayashi, Masato and Uranishi, Yuki and Takemura, Haruo},
+                journal={IEEE Transactions on Visualization and Computer Graphics}, 
+                title={CaliView: Continuous Viewpoint Calibration Using Dynamic Rotation Gain Control}, 
+                year={2025},
+                volume={31},
+                number={12},
+                pages={10942-10951},
+                keywords={Legged locomotion;Resists;Turning;Manuals;Immersive experience;Cameras;Three-dimensional displays;Navigation;Videos;Vectors;Virtual reality;rotation gains;interaction techniques},
+                doi={10.1109/TVCG.2025.3620419}}
+              
+      </code>
+      </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Integrated Media Environment Lab (Uranishi Lab), The University of Osaka • Contact:shizuka.shirai.cmc[at]osaka-u.ac.jp</a>
+    </footer>
+
+  <script>
+      function copyBibTex() {
+        const code = document.getElementById('bibtex-code').innerText;
+        navigator.clipboard.writeText(code).then(() => {
+          const tooltip = document.querySelector('.tooltiptext');
+          tooltip.textContent = 'Copied!';
+          setTimeout(() => tooltip.textContent = 'Copy', 1500);
+        });
+      }
+    </script>
+</body>
+</html>
